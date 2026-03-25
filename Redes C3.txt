@@ -1,0 +1,36 @@
+Redes C3
+Capa 2: enlace de datos
+en el caso de la conexión directa_
+7 y 8 es el par 4 y es tierra en el cable utp
+el que lleva el postivo siempre va en el centro el par 1 _azul
+el par dos abarca 1 y 2 _naranja
+el  par 3 es 3 y 6 _verde
+cuando es cruzado se intercambia el par 2 y 3 
+Funciones:
+-Encapsulamiento de datos 
+-direccionamiento físico
+-control de acceso  al medio
+-deteccion de errores
+-control de flujo
+la capa de enlace de datos se divide en subcapas:
+-LLC: se encarga de RED, Logical Linh control
+funciones:
+-identifica el protocolo que esta usando la capa 3 IPv4.IPv6
+-Controla el flujo de los datos 
+-Proporciona la interfaz entre la capa 2 y 3 
+-ayuda en el control de errores
+-MAC: se encarga de física, Media Access 5 Control
+Funciones:
+-controla el acceso al medio  de forma física
+-controla el direccionamiento físico
+-se encarga del formato de las tramas
+-evita o maneja colisiones de la red
+
+PARA UNA TRAMA ETHERNET SIN PREAMBULO TIENE UN TAMAÑO MAXIMO DE 1518 BYTES
+-preámbulo: secuencia de bits para sincronizar al receptor	7 bytes
+SFD (start frame delimiter) indica el inicio de la Trama 	1 byte
+MAC de destino: Indica la dirección MAC del receptor 		6 bytes
+MAC  de origen: Indica la dirección MAC del origen 		6 bytes
+Longitud: indica la longitud de los datos y del tipo de protocolo de la capa 3		2 bytes
+Datos: contiene la información proveniente de la capa 3 	0 - 1500  bytes
+FCS (Frame check sequence): Revisa  la secuencia de las tramas, si hay errores de la trama se  descarta		4 bytes
