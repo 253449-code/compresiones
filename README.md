@@ -1,2 +1,0 @@
-# compresiones
-si
